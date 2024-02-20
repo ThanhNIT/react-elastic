@@ -13,7 +13,7 @@ const App = () => {
 
   const handleSearch = async (query) => {
     try {
-      const response = await axios.get(`http://localhost:3001/search?query=${query}`);
+      const response = await axios.get(`http://http://45.118.132.207:3001/search?query=${query}`);
       const extractedResults = response.data.map((item) => item._source);
       setResults(extractedResults);
     } catch (error) {
