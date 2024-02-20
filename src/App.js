@@ -22,15 +22,19 @@ const App = () => {
   };
 
   const handleFileSelect = (url) => {
-    setFileUrl(url);
+    window.open(url, '_blank');
   };
 
   return (
     <Router>
       <div>
-      <SearchBar onSearch={handleSearch} />
+      <div>
+        <SearchBar onSearch={handleSearch} />
+      </div>
+      <div>
       <SearchResults results={results} handleSelect={handleFileSelect}/>
-      {fileUrl && <DocxViewer fileUrl={fileUrl} />}
+      </div>
+      {/* {fileUrl && <DocxViewer fileUrl={fileUrl} />} */}
       {/* <div>
       <Route path='/view' component={FileViewer}></Route>
       <Route path='/doc' component={DocxViewer}></Route>
