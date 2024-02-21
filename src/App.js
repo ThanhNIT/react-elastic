@@ -22,7 +22,7 @@ const App = () => {
   };
 
   const handleFileSelect = (url) => {
-    window.open('https://www.clickdimensions.com/links/TestPDFfile.pdf', '_blank');
+    window.open('http://45.118.132.207/' + url, '_blank');
   };
 
   return (
