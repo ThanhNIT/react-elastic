@@ -1,0 +1,23 @@
+.container{
+  width:80%;
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+.svg{
+  margin-top: 40px;
+  width: 40px;
+  animation:  rotate 2s linear infinite;
+}
+.svg svg{
+  width: 100%;
+  height: auto;
+}
+@keyframes rotate {  
+  from {  
+    transform: rotate(0deg);  
+  }  
+  to {  
+    transform: rotate(360deg);  
+  }  
+}  
